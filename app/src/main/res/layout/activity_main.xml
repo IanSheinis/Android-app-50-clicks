@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#D7000000">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:id="@+id/start"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:id="@+id/cords"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/layout1"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Clicks remaining: 50"
+            android:textColor="@color/white"
+            android:id="@+id/clicks"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clicks"
+            android:layout_centerHorizontal="true"
+            android:textColor="#48FFFFFF"
+            android:paddingTop="50dp"
+            android:text="0:00"
+            android:id="@+id/timer"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/layoutVictory"
+        android:visibility="gone"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="TIME"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/victoryTime"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/victoryTime"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:paddingTop="60dp"
+            android:layout_centerInParent="true"
+            android:text="BEST TIME"
+
+            android:id="@+id/bestTime" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bestTime"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFD700"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="140dp"
+
+
+            android:text="PB"
+
+            android:id="@+id/pb"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bestTime"
+            android:layout_centerHorizontal="true"
+            android:text="Try Again?"
+            android:textColor="#000000"
+            android:id="@+id/tryAgain"
+            android:layout_marginTop="280dp"
+            android:textAllCaps="false"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/white"
+        android:visibility="gone"
+        android:id="@+id/ball"/>
+
+
+</RelativeLayout>
